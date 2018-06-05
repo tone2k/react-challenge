@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './card.css';
 
 const Card = (props) => (
     <div className="card-container">
         <div className="card">
             <div className="front">
-                <div className="eng">Card A</div>
+                <div className="eng">{props.name}</div>
             </div>
             <div className="back">
-                <div className="han">1</div>
-                <div className="pin">2</div>
+                <div className="han">{props.num}</div>
             </div>
         </div>
+        <button>Next Card</button>
+        <button>Shuffle Cards</button>
     </div>
 )
 

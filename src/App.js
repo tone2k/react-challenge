@@ -8,7 +8,7 @@ class App extends Component {
 
     this.state = {
       cards: [
-        {id: 1, name: "card", num: "1" },
+        {id: 1, name: "card-1", num: "1" },
         { id: 2, name: "card-2", num: "2" },
         { id: 3, name: "card-3", num: "3" }
         
@@ -27,16 +27,21 @@ class App extends Component {
   }
 
   shuffleCard(currentCards){
-    const card = currentCards[Math.floor(Math() * currentCards.length)];
+    const card = currentCards[Math.floor(Math.random() * currentCards.length)];
+    return(card);
   }
   
-  render() {
+  render(){
     return (
       <div className="App">
-        <Card />
+        <div className="cardRow">
+          <Card name={this.state.currentCard.name} num={this.state.currentCard.num}/>
+        </div>
       </div>
-    
-  }
+    <div className"buttonRow">
+      <shuffleButton />
+    </div>
+    )}
 }
 
 export default App;
