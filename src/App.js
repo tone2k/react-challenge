@@ -25,6 +25,10 @@ class App extends Component {
       currentCard: this.shuffleCard(currentCards)
     })
   }
+
+  shuffleCard(currentCards){
+    const card = currentCards[Math.floor(Math() * currentCards.length)];
+  }
   
   render() {
     return (
