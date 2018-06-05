@@ -21,12 +21,9 @@ class App extends Component {
     const currentCards = this.state.cards;
 
     this.setState({
-      cards: currentCard,
-      currentCard: this.shuffleCards(currentCards)
-    
+      cards: currentCards,
+      currentCard: this.shuffleCard(currentCards)
     })
-
-
   }
   
   render() {
@@ -34,7 +31,7 @@ class App extends Component {
       <div className="App">
         <Card />
       </div>
-    );
+    
   }
 }
 
