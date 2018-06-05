@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Card from './cards/card';
-import shuffleButton from './shuffleButton/shuffleButton'
+import Card from './cards/Card';
+import ShuffleButton from './shuffleButton/ShuffleButton'
 
 class App extends Component {
   constructor(props){
     super(props);
+
+    this.updateCard = this.updateCard.bind(this);
 
     this.state = {
       cards: [
@@ -31,6 +33,10 @@ class App extends Component {
     const card = currentCards[Math.floor(Math.random() * currentCards.length)];
     return(card);
   }
+
+  updateCard(){
+    console.log("New Card");
+  }
   
   render(){
     return(
@@ -39,7 +45,7 @@ class App extends Component {
             <Card name={this.state.currentCard.name} num={this.state.currentCard.num}/>
           </div>
           <div className="buttonRow">
-            <shuffleButton />
+            <ShuffleButton chooseCard={this.updateCard} />
             </div>
       </div>
     )}

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './shuffleButton.css';
 
-class shuffleButton extends Component{
+class ShuffleButton extends Component{
     constructor(props){
         super(props);
 
@@ -22,4 +22,4 @@ class shuffleButton extends Component{
 }
 
 
-export default shuffleButton;
+export default ShuffleButton;

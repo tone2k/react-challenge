@@ -11,8 +11,6 @@ const Card = (props) => (
                 <div className="han">{props.num}</div>
             </div>
         </div>
-        <button>Next Card</button>
-        <button>Shuffle Cards</button>
     </div>
 )
 
