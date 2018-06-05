@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Card from './cards/card';
+import shuffleButton from './shuffleButton/shuffleButton'
 
 class App extends Component {
   constructor(props){
@@ -32,15 +33,15 @@ class App extends Component {
   }
   
   render(){
-    return (
+    return(
       <div className="App">
-        <div className="cardRow">
-          <Card name={this.state.currentCard.name} num={this.state.currentCard.num}/>
-        </div>
+          <div className="cardRow">
+            <Card name={this.state.currentCard.name} num={this.state.currentCard.num}/>
+          </div>
+          <div className="buttonRow">
+            <shuffleButton />
+            </div>
       </div>
-    <div className"buttonRow">
-      <shuffleButton />
-    </div>
     )}
 }
 
