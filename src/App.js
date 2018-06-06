@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Card from './cards/Card';
 import ShuffleButton from './shuffleButton/ShuffleButton';
-import {
-  PropTypes
-} from 'react'
+
 
 class App extends Component {
   constructor(props){
@@ -106,7 +104,7 @@ class App extends Component {
   passCard() {
     const currentCards = this.state.cards;
     this.setState({
-      currentCard: this.searchCard(currentCards)
+      currentCard: this.passCard(currentCards)
     })
   }
   
@@ -118,6 +116,7 @@ class App extends Component {
           </div>
           <div className="buttonRow">
             <ShuffleButton chooseCard={this.updateCard} />
+            <button className="btn" onClick={this.passCard}>Next</button>
             </div>
       </div>
     )}
