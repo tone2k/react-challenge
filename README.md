@@ -4,6 +4,9 @@ A simple ReactJs application simulating a deck of cards, soon to have full shuff
 
 ## How to use:
 
+Start with navigating over to npmjs and install Node Package Manager at:
+https://www.npmjs.com/get-npm
+
 Clone the repo in to your local machine using terminal in Mac or the cmd application in Windows with the command: 
 <pre>git clone https://github.com/tone2k/react-challenge.git</pre>
 
