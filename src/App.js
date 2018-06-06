@@ -85,7 +85,7 @@ class App extends Component {
     return(card);
   }
   
-  nextCard(currentCards){
+  nextCard = (currentCards) => {
   console.log('connected');
 
     // this.setState(newState);
@@ -113,6 +113,9 @@ class App extends Component {
           <div className="cardRow">
             <Card name={this.state.currentCard.name} num={this.state.currentCard.num}/>
           </div>
+            {/* <ul> 
+            {this.state.currentCards.map(function(cards, i){return<li key ={i}>{this.state.currrentCard.name}</li>})};
+              </ul> */}
           <div className="buttonRow">
             <ShuffleButton chooseCard={this.updateCard} />
           <button className="btn" onClick={() => { this.passCard() }}>Next</button>

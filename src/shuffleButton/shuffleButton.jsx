@@ -16,7 +16,7 @@ class ShuffleButton extends Component{
     render(props){
         return(
             <div className="buttonContainer">
-                <button className="btn" onClick={this.chooseCard}>Draw</button>
+                <button className="btn" onClick={this.chooseCard}>Shuffle</button>
             </div>
         )
     }

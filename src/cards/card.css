@@ -8,16 +8,18 @@ body {
     width: 400px;
     perspective: 800px;
     position: relative;
+    margin-top: 10%;
     margin: auto;
 }
 
 .card {
+    /* margin-top: 10%; */
     height: 400px;
     width: 400px;
     position: absolute;
-    border: 5px solid rgba(255, 251, 251, 1);
-    border-radius: 15px;
+    /* border: 5px solid #E6E6E6; */
     padding: 5px;
+    border-radius: 16px;
 }
 
 
@@ -28,7 +30,9 @@ body {
     position: absolute;
     overflow: hidden;
     text-align: center;
-    background-color: rgba(255, 251, 251, 1);
+    background-color: #E6E6E6;
+    border: 2px solid black;
+    border-radius: 9px;
 }
 
 
@@ -38,14 +42,3 @@ body {
     padding-top: 40%;
 }
 
-.num {
-    color: #333;
-    padding-top: 20%;
-    font-size: 20px;
-}
-
-.name {
-    color: rgba(200, 10, 10, 1);
-    font-size: 2.3em;
-    padding-top: 10%;
-} 

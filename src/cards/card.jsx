@@ -7,9 +7,6 @@ const Card = (props) => (
             <div className="front">
                 <div className="eng">{props.name}</div>
             </div>
-            <div className="back">
-                <div className="han">{props.num}</div>
-            </div>
         </div>
     </div>
 )
