@@ -9,7 +9,7 @@ class App extends Component {
     super(props);
 
     this.updateCard = this.updateCard.bind(this);
-    this.passCard = this.passCard.bind(this);
+    this.nextCard = this.nextCard.bind(this);
 
     this.state = {
       cards: [
@@ -85,10 +85,8 @@ class App extends Component {
     return(card);
   }
   
-  passCard(currentCards){
-    for (let i = 0; i < currentCards.length; i++) {
-      currentCards[i];
-    }
+  nextCard(currentCards){
+  console.log('connected');
 
     // this.setState(newState);
   }
@@ -103,8 +101,9 @@ class App extends Component {
   }
   passCard() {
     const currentCards = this.state.cards;
+    console.log(currentCards);
     this.setState({
-      currentCard: this.passCard(currentCards)
+      currentCard: this.state.nextCard(currentCards)
     })
   }
   
@@ -116,7 +115,7 @@ class App extends Component {
           </div>
           <div className="buttonRow">
             <ShuffleButton chooseCard={this.updateCard} />
-            <button className="btn" onClick={this.passCard}>Next</button>
+          <button className="btn" onClick={() => { this.passCard() }}>Next</button>
             </div>
       </div>
     )}
