@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
 import Card from './cards/Card';
-import ShuffleButton from './shuffleButton/ShuffleButton'
+import ShuffleButton from './shuffleButton/ShuffleButton';
+import {
+  PropTypes
+} from 'react'
 
 class App extends Component {
   constructor(props){
     super(props);
 
     this.updateCard = this.updateCard.bind(this);
+    this.passCard = this.passCard.bind(this);
 
     this.state = {
       cards: [
@@ -82,11 +86,27 @@ class App extends Component {
     const card = currentCards[Math.floor(Math.random() * currentCards.length)];
     return(card);
   }
+  
+  passCard(currentCards){
+    for (let i = 0; i < currentCards.length; i++) {
+      currentCards[i];
+    }
+
+    // this.setState(newState);
+  }
+
 
   updateCard(){
     const currentCards = this.state.cards;
     this.setState({
       currentCard: this.shuffleCard(currentCards)
+    })
+
+  }
+  passCard() {
+    const currentCards = this.state.cards;
+    this.setState({
+      currentCard: this.searchCard(currentCards)
     })
   }
   
