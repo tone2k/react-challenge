@@ -5,10 +5,10 @@ A simple ReactJs application simulating a deck of cards, soon to have full shuff
 ## How to use:
 
 Clone the repo in to your local machine using terminal in Mac or the cmd application in Windows with the command: 
-<pre>git clone</pre>
+<pre>git clone https://github.com/tone2k/react-challenge.git</pre>
 
 After, navigate into the cloned directory and start the application with the command: 
-<pre>npm start https://github.com/tone2k/react-challenge.git</pre>
+<pre>npm start</pre>
 
 Once the application is started, your browser should open rendering the page (shown below)
 
