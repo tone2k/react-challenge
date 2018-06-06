@@ -102,9 +102,6 @@ class App extends Component {
   passCard() {
     const currentCards = this.state.cards;
     console.log(currentCards);
-    this.setState({
-      currentCard: this.state.nextCard(currentCards)
-    })
   }
   
   render(){
